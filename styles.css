@@ -1,0 +1,281 @@
+*{
+    font-family: "Oswald", sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url(https://1.bp.blogspot.com/-c8D3ADPoq6g/VpGSGf9Mp1I/AAAAAAAAbJs/l6Pqe8CAdAo/s1600/Paisaje%2B4.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fire{
+  background-color: rgb(243, 110, 48);
+}
+.electric{
+  background-color: yellow;
+}
+.grass{
+  background-color: rgb(0, 255, 170);
+}
+.rock{
+  background-color: rgb(255, 175, 54);
+}
+.flying{
+  background-color: aqua;
+}
+span{
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.center{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    z-index: 2;
+    background-color: rgb(236, 177, 69);
+}
+#inputs-elements{
+    width: 30%;
+    height: 750px;
+    min-height: 345px;
+    margin: 5% auto;
+    background-color: #f5b323;
+    box-shadow: 3px 3px 30px 10px rgb(255, 255, 255);
+    border-radius: 25px;
+    border: 1px solid black;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+}
+button, .input{
+    font-size: 15px;
+}
+#types{
+  display: flex;
+  gap: 10px;
+}
+#container3{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 15px auto;
+    gap: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+#container0{
+    padding: 15px 0px;
+    width: 100%;
+    position: absolute;
+    top: 5%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    z-index: 3;
+}
+.input{
+    margin: auto;
+    width: 30%;
+    flex-grow: 1;
+}
+.img{
+    margin: 15px;
+}
+#container1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+h1{
+    background: linear-gradient(90deg, rgb(238, 175, 59),rgb(66, 66, 66));
+    width: 100%;
+    color: rgb(0, 0, 0);
+    margin: 0px;
+    font-size: 35px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    z-index: 1;
+}
+.scroll{
+    overflow: hidden;
+}
+h2{
+    position: relative;
+    width: 40%;
+    margin: 20px auto 10px auto;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(243, 110, 48);
+    border: 1px solid black;
+}
+h3{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+#container1,#container2{
+  margin: 0px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 5px;
+}
+#container1{
+  font-weight: bold;
+}
+#types{
+  margin-left: 10px;
+  margin-right: auto;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+#sprite{
+    width: 35%;
+    height: auto;
+    margin: auto;
+}
+#results{
+    flex-grow: 1;
+    margin: auto 25px;
+    display: flex;
+    flex-direction: column;
+}
+#results1{
+  position: relative;
+  height: auto;
+  padding: 0px 10px;
+}
+#results1 p{
+  margin: 0px;
+  font-size: 15px;
+}
+.table{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+table{
+    width: 90%;
+    margin: 20px auto;
+}
+th,td{
+    font-size: 20px;
+    background-color: rgb(59, 146, 245);
+    padding: 3px 5px 5px 5px;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    border: 1px solid black;
+}
+.lds-ellipsis,
+.lds-ellipsis div {
+    margin-top: 23%;
+  box-sizing: border-box;
+}
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33.33333px;
+  width: 13.33333px;
+  height: 13.33333px;
+  border-radius: 50%;
+  background: currentColor;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+  
+  @media (max-width:1300px) {
+    .img{
+        width: 10%;
+        height: auto;
+    }
+    #results1 p{
+      margin: 0px;
+      font-size: 10px;
+    }
+    #inputs-elements{
+        width: 90%;
+        height: 80%;
+        z-index: 2;
+    }
+    h2{
+        width: 80%;
+        margin: 20px auto 10px auto;
+        font-size: 20px;
+    }
+    h3{
+        width: 90%;
+        font-size: 15px;
+    }
+    #container3{
+        width: 80%;
+    }
+    #container0{
+      z-index: 3;
+    }
+    th,td{
+        font-size: 15px;
+        padding: 2px 5px 2px 5px;
+    }
+}
+@media (max-height: 750px) {
+  #img{
+    width: 40%;
+  }
+}

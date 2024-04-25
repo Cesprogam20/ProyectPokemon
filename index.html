@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Proyect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body class="scroll">
+    <div class="center" id="element1"><div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div></div>
+    <h1>&nbspPokemon Proyect</h1>
+    <div id="container0">
+        <img src="https://cdn-icons-png.flaticon.com/256/528/528101.png" alt="pokemon" class="img">
+        <img src="https://cdn-icons-png.flaticon.com/256/528/528098.png" alt="pokemnon2" class="img">
+    </div>
+    <div id="inputs-elements">
+        <h2>Pokémon Search App</h2>
+        <h3>Search for Pokémon Name or ID:</h3>
+        <div id="container3">
+            <input type="text" class="input" id="search-input" required>
+            <button class="button" id="search-button">Search</button>
+        </div>
+        <div id="results">
+            <div id="results1">
+                <div id="container1">
+                    <p id="pokemon-name"></p>
+                    <p id="pokemon-id"></p>
+                </div>
+                <div id="container2">
+                    <p id="weight"></p>
+                    <p id="height"></p>
+                </div>
+            </div>
+            <img src="" id="sprite">
+            <div id="types"></div>
+        </div>
+        <div class="table">
+            <table>
+            <tr>
+                <th>Base</th>
+                <th>Stats</th>
+                </tr>
+                <tr>
+                <td>HP:</td>
+                <td id="hp"></td>
+                </tr>
+                <tr>
+                <td>Attack:</td>
+                <td id="attack"></td>
+                </tr>
+                <tr>
+                <td>Defense:</td>
+                <td id="defense"></td>
+                </tr>
+                <tr>
+                <td>Special Attack:</td>
+                <td id="special-attack"></td>
+                </tr>
+                <tr>
+                <td>Special Defense:</td>
+                <td id="special-defense"></td>
+                </tr>
+                <tr>
+                <td>Speed:</td>
+                <td id="speed" class="speed"></td>
+                </tr>
+            </table>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+</html>
